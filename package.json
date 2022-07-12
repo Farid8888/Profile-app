@@ -4,12 +4,10 @@
   "description": "Profile App",
   "main": "app.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=production node app.js",
+    "start": "node app.js",
     "server": "nodemon app.js",
     "client": "npm run start --prefix client",
-    "client:install": "npm install --prefix client",
-    "client:build": "npm run build --prefix client",
-    "dev": "cross-env NODE_ENV=development concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "keywords": [
     "profile",
@@ -32,5 +30,13 @@
     "concurrently": "^7.2.2",
     "cross-env": "^7.0.3",
     "nodemon": "^2.0.19"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Farid8888/profile-App.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Farid8888/profile-App/issues"
+  },
+  "homepage": "https://github.com/Farid8888/profile-App#readme"
 }
