@@ -11,6 +11,7 @@ function App() {
   const {token, login, logout, userId, ready} = useAuth()
   const [trigger,setTrigger]=useState(false)
   const isAuthenticated = !!token
+  console.log(isAuthenticated)
   const routes = useRoutes(isAuthenticated)
 const triggerHandler =()=>{
   setTrigger(prevst=>{
